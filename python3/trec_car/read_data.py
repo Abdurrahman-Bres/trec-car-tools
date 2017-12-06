@@ -79,7 +79,7 @@ class Page(object):
 
         :rtype: str
         """
-        return self.page_name + self.page_meta +\
+        return self.page_name + str(self.page_meta) +\
                '\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~' + '\n'.join(str(s) for s in self.skeleton)
 
     def nested_headings(self):
